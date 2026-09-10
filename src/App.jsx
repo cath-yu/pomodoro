@@ -1,6 +1,5 @@
 // REACT
 import { useEffect, useState, useRef } from "react";
-//
 
 // ASSETS
 import Cloud from "./assets/cloud.svg";
@@ -11,6 +10,7 @@ import Pause from "./assets/pause.svg";
 import Play from "./assets/play.svg";
 import RainCloud from "./assets/rain_cloud.svg";
 import Sun from "./assets/sun.svg";
+import Alarm from "../public/alarm.mp3";
 
 // CSS
 import "./App.css";
@@ -37,8 +37,7 @@ export default function App() {
     const [rainToggle, setRainToggle] = useState(false);
 
     // alarm sound effect
-    const alarmPath = "public/alarm.mp3";
-    const alarm = new Audio(alarmPath);
+    const alarm = new Audio(Alarm);
     alarm.volume = 0.1;
     
     // update timer
