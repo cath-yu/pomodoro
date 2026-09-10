@@ -77,7 +77,7 @@ export default function App() {
         }
     }
 
-    const handleStart = () => {
+    const handlePlay = () => {
         setRunning(true);
     }
 
@@ -114,8 +114,8 @@ export default function App() {
                 </div>
 
                 <div className="icons">
-                    <img src={Play} draggable="false" onClick={handleStart}/>
-                    <img src={Pause} draggable="false" onClick={handlePause}/>
+                    {running === false && <img src={Play} draggable="false" onClick={handlePlay}/>}
+                    {running === true && <img src={Pause} draggable="false" onClick={handlePause}/>}
                 </div>
             </div>
         </div>
