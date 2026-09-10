@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url('fonts/MinecraftRegular-Bmg3.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
     overflow: hidden;
@@ -12,15 +19,39 @@ body {
 }
 
 .header {
+    height: 36px;
     display: flex;
     justify-content: end;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .body {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
+    gap: 1rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    font-family:  "Minecraft", Helvetica;
+    font-size: 120px;
+    color: #f5ddc5;
+}
+
+.icons {
+    height: 36px;
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.icons img {
+    cursor: pointer;
 }

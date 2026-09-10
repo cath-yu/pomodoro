@@ -25,3 +25,4 @@ dist-ssr
 
 src/assets/*.png
 src/assets/*.jpg
+src/fonts
