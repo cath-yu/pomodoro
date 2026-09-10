@@ -17,9 +17,12 @@ import "./App.css";
 
 export default function App() {
     // time consts
-    const workTime = 1500;
-    const breakTime = 300;
-    const longBreakTime = 900;
+    // const workTime = 1500;
+    // const breakTime = 300;
+    // const longBreakTime = 900;
+    const workTime = 7;
+    const breakTime = 3;
+    const longBreakTime = 10;
 
     // timer states
     const [time, setTime] = useState(workTime);
@@ -37,9 +40,9 @@ export default function App() {
     const [rainToggle, setRainToggle] = useState(false);
 
     // alarm sound effect
-    const alarmPath = "../public/alarm.mp3";
+    const alarmPath = "public/alarm.mp3";
     const alarm = new Audio(alarmPath);
-    alarm.volume = 0.08;
+    alarm.volume = 0.1;
     
     // update timer
     useEffect(() => {
