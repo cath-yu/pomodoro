@@ -17,12 +17,9 @@ import "./App.css";
 
 export default function App() {
     // time consts
-    // const workTime = 1500;
-    // const breakTime = 300;
-    // const longBreakTime = 900;
-    const workTime = 7;
-    const breakTime = 3;
-    const longBreakTime = 10;
+    const workTime = 1500;
+    const breakTime = 300;
+    const longBreakTime = 900;
 
     // timer states
     const [time, setTime] = useState(workTime);
